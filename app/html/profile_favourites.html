@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 hidden-xs">
+						@@include('html/modules/profile_sidebar.html')	
+					</div>
+					<div class="col-md-offset-1 col-md-8 col-sm-12">
+						<div class="profile-favourite">	
+							<div class="catalog-products-container">
+								<div class="text-left">
+									<div class="profile-title">	
+										Избранные товары
+									</div>
+									<div class="profile-description">	
+										Вы можете убрать товары из списка, а также добавить в него новые – для этого нажмите кнопку «Мне нравится» на выбранном товаре
+									</div>
+								</div>
+								<div class="filters text-right profile-filters">
+									<div class="dropdown dropdown-filters">
+										<span class="dropdown-text"> 
+											Сортировать:
+										</span>
+										<a class="dropdown-toggle" data-toggle="dropdown">
+											по цене<img alt="eng" src="img/icons/arrow-down.png">
+										</a>
+										<ul class="dropdown-menu">
+											<li data-value='по цене<img alt="eng" src="img/icons/arrow-up.png">'>
+												<a>Цена (по возрастанию)</a>
+											</li>
+											<li data-value='по цене<img alt="eng" src="img/icons/arrow-down.png">'>
+												<a>Цена (по убыванию)</a>
+											</li>
+											<li data-value='Есть в наличии'><a href="#">Есть в наличии</a></li>
+											<li data-value="Недавно добавлены"><a href="#">Недавно добавленные</a></li>
+											<li data-value="Давно добавлены"><a href="#">Давно добавленные</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog-products">
+									<div class="catalog-item">
+										<div class="item-image blocked">
+											<a href="#">
+												<img src="img/content/catalog/item1.png">
+											</a>
+											<div class="info-text">
+												НЕТ В НАЛИЧИИ
+											</div>
+										</div>	
+										<div class="item-info">
+											<div class="favourite toggle-active-self active"></div>
+											<div class="item-price">
+												<span class="old">150</span>
+												<span class="actual">122</span>
+												<span class="currency">BYN</span>	
+											</div>
+											<div class="item-title">
+												Regatta	<span>/Рубашка </span>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-item">
+										<div class="item-image blocked">
+											<a href="#">
+												<img src="img/content/catalog/item2.png">
+											</a>
+											<div class="info-text">
+												НЕТ В НАЛИЧИИ
+											</div>
+										</div>	
+										<div class="item-info">
+											<div class="favourite toggle-active-self active"></div>
+											<div class="item-price">
+												<span class="old">150</span>
+												<span class="actual">122</span>
+												<span class="currency">BYN</span>	
+											</div>
+											<div class="item-title">
+												Regatta	<span>/Рубашка </span>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-item">
+										<div class="item-image">
+											<a href="#">
+												<img src="img/content/catalog/item3.png">
+											</a>
+										</div>	
+										<div class="item-info">
+											<div class="favourite toggle-active-self active"></div>
+											<div class="item-price">
+												<span class="old">150</span>
+												<span class="actual">122</span>
+												<span class="currency">BYN</span>	
+											</div>
+											<div class="item-title">
+												Regatta	<span>/Рубашка </span>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-item">
+										<div class="item-image">
+											<a href="#">
+												<img src="img/content/catalog/item1.png">
+											</a>
+										</div>	
+										<div class="item-info">
+											<div class="favourite toggle-active-self active"></div>
+											<div class="item-price">
+												<span class="old">150</span>
+												<span class="actual">122</span>
+												<span class="currency">BYN</span>	
+											</div>
+											<div class="item-title">
+												Regatta	<span>/Рубашка </span>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-item">
+										<div class="item-image">
+											<a href="#">
+												<img src="img/content/catalog/item2.png">
+											</a>
+										</div>	
+										<div class="item-info">
+											<div class="favourite toggle-active-self active"></div>
+											<div class="item-price">
+												<span class="old">150</span>
+												<span class="actual">122</span>
+												<span class="currency">BYN</span>	
+											</div>
+											<div class="item-title">
+												Regatta	<span>/Рубашка </span>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-item">
+										<div class="item-image">
+											<a href="#">
+												<img src="img/content/catalog/item3.png">
+											</a>
+										</div>	
+										<div class="item-info">
+											<div class="favourite toggle-active-self"></div>
+											<div class="item-price">
+												<span class="old">150</span>
+												<span class="actual">122</span>
+												<span class="currency">BYN</span>	
+											</div>
+											<div class="item-title">
+												Regatta	<span>/Рубашка </span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="results-counter bottom-20">
+									<div class="counter-container">
+										Вам было показано 6 из 
+										<span>92</span>
+										результатов
+									</div>
+									<a href="#" id="moreResults">
+										Показать еще
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row">	
+					<div class="col-sm-5">	
+						
+					</div>
+					<div class="col-sm-7">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+
+</body>
+</html>

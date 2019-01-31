@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-md-4"></div>
+					<div class="col-sm-6 col-md-4">
+						<ul class="form-nav">
+							<li class="active">
+								<a href="#logIn" data-toggle="tab">
+									Вход
+								</a>
+							</li>
+							<li>
+								<a href="#registration" data-toggle="tab">
+									Регистрация
+								</a>
+							</li>
+						</ul>
+						<div class="form-tabs tab-content">
+							<form class="tab-pane contet-tab-item fade in active" id="logIn" method="post" action="404.html">
+								<div class="form-item">
+									<div class="form-label">Адрес электронной почты</div>
+									<input type="text" class="validate required" data-type="email" data-error="#emailError" placeholder="ваша электронная почта" name="email">
+									<div class="error" id="emailError"></div>
+								</div>
+								<div class="form-item">
+									<div class="password toggle-active-self" data-field="#logPass"></div>
+									<div class="form-label">Пароль</div>
+									<input type="password" class="validate required" data-type="password" data-error="#passwordError" id="logPass" placeholder="ваш пароль" name="password">
+									<div class="error" id="passwordError"></div>
+								</div>
+								<div class="form-item text-center">
+									<button class="button violet" type="submit">ВОЙТИ</button>
+									<br>
+									<a href="#" class="fargot">
+										Забыли пароль?
+									</a>
+								</div>
+								<div class="form-item text-center">
+									<div class="form-social-text">
+										<span>или,</span> войдите через профиль социальных сетей
+									</div>
+									<div class="form-social-links">
+										<a href="#"><i class="fa fa-vk"></i></a>
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter	"></i></a>	
+									</div>
+								</div>
+							</form>
+							<form class="contet-tab-item" id="registration" method="post" action="404.html">
+								<div class="form-item">
+									<div class="form-label">Имя</div>
+									<input type="text" class="validate required" data-error="#nameError" placeholder="введите имя" name="name" data-type="required">
+									<div class="error" id="nameError"></div>
+								</div>
+								<div class="form-item">
+									<div class="form-label">Адрес электронной почты</div>
+									<input type="text" class="validate required" data-type="email" data-error="#emailError2" placeholder="ваша электронная почта" name="email">
+									<div class="error" id="emailError2"></div>
+								</div>
+								<div class="form-item">
+									<div class="password toggle-active-self" data-field="#logPass2"></div>
+									<div class="form-label">Пароль</div>
+									<input type="password" class="validate required" data-type="password" data-error="#passwordError2" id="logPass2" placeholder="ваш пароль" name="password">
+									<div class="error" id="passwordError2"></div>
+								</div>
+								<div class="form-item">
+									<div class="password toggle-active-self" data-field="#replogPass"></div>
+									<div class="form-label">Повторите пароль</div>
+									<input type="password" class="validate required" data-type="repeatpassword" data-error="#repeatPasswordError" id="replogPass" placeholder="повторите пароль" name="password">
+									<div class="error" id="repeatPasswordError"></div>
+								</div>
+								<div class="form-item">
+									<input type="hidden" name="sendNews" value="" id="sendNews">
+									<a href="#sendNews" class="check-box toggle-active-self">
+										Я хочу получать эксклюзивные новости от
+										timido о скидках и трендах по электронной почте
+									</a>
+								</div>
+								<div class="form-item text-center">
+									<button class="button violet" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+
+</body>
+</html>

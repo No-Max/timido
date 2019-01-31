@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 hidden-xs bottom-30">
+						@@include('html/modules/profile_sidebar.html')	
+					</div>
+					<div class="col-md-offset-1 col-md-8 col-sm-12">
+						<div class="profile-content bottom-30">	
+							<div class="profile-title">	
+								Бонусы за покупку
+							</div>
+							<div class="profile-description">	
+								Здесь находится информация о покупке и начисленных быллах по программе лояльности. С правилами можно ознакомиться на этой странице в разделе «Правила начисления баллов»
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPJmpekEazyMzVB1DtFMT1xQdH-GL_ewU&callback=initMap"></script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 hidden-xs bottom-30">
+						@@include('html/modules/profile_sidebar.html')	
+					</div>
+					<div class="col-md-offset-1 col-md-8 col-sm-12">
+						<div class="profile-content">	
+							<div class="profile-title">	
+								Моя информация
+							</div>
+							<div class="profile-description">	
+								Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные
+							</div>
+							<form class="form-tabs">
+								<div class="form-title bottom-20">
+									Мои данные
+								</div>
+								<div class="form-row">
+									<div>
+										<div class="form-item">
+											<div class="form-label">Имя</div>
+											<input type="text" class="validate required" data-error="#nameError" placeholder="введите имя" name="name" data-type="required">
+											<div class="error" id="nameError"></div>
+										</div>
+									</div>
+									<div>
+										<div class="form-item">
+											<div class="form-label">Фамилия</div>
+											<input type="text" class="validate required" data-error="#lastnameError" placeholder="введите фамилию" name="lastname" data-type="required">
+											<div class="error" id="lastnameError"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div>
+										<div class="form-item">
+											<div class="form-label">Адрес электронной почты</div>
+											<input type="text" class="validate required" data-type="email" data-error="#emailError" placeholder="ваша электронная почта" name="email">
+											<div class="error" id="emailError"></div>
+										</div>
+									</div>
+									<div>
+										<div class="form-item">
+											<div class="form-label">Телефон</div>
+											<input type="text" class="validate required" data-type="phone" data-error="#phoneError" placeholder="ваш телефон" name="email">
+											<div class="error" id="phoneError"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div>
+										<div class="form-item">
+											<div class="form-label">Дата рождения</div>
+											<div id="dateContainer" class="data-container">
+												<input type="number" name="day" id="day" placeholder="день" class="addfocus">
+												<div class="custom-select empty clearing date">
+													<input type="hidden" id="date">
+													<div data-value="open" class="field"></div>
+													<div data-value="open" class="placeholder">месяц</div>
+													<ul class="select-body">
+														<li data-value="clear">Очистить</li>
+														<li data-num="1" data-value="январь">январь</li>
+														<li data-num="2" data-value="феврвль">феврвль</li>
+														<li data-num="3" data-value="март">март</li>
+														<li data-num="4" data-value="апрель">апель</li>
+														<li data-num="5" data-value="май">май</li>
+														<li data-num="6" data-value="июнь">июнь</li>
+														<li data-num="7" data-value="июль">июль</li>
+														<li data-num="8" data-value="август">август</li>
+														<li data-num="9" data-value="сентябрь">сентябрь</li>
+														<li data-num="10" data-value="октябрь">октябрь</li>
+														<li data-num="11" data-value="ноябрь">ноябрь</li>
+														<li data-num="12" data-value="декабрь">декабрь</li>
+													</ul>
+												</div>
+												<input class="addfocus" type="number" name="year" id="year" placeholder="год">
+											</div>
+											<div class="error" id="dateError"></div>
+										</div>
+									</div>
+									<div>
+										<div class="form-item">
+											<div class="form-label">Пол</div>
+											<ul class="radio-group form-radio">
+												<input type="hidden" id="male" value="male">
+												<li class="active" data-value="male" data-input="#male">
+													<a data-toggle="tab">
+														Мужской
+													</a>
+												</li>
+												<li data-value="female" data-input="#male">
+													<a data-toggle="tab">
+														Женский
+													</a>
+												</li>
+											</ul>
+										</div>	
+									</div>
+								</div>
+								<div class="top-20 hidden-xs"></div>
+								<div class="form-title">
+									Пароль
+								</div>
+								<div class="profile-description bottom-20">	
+									Вы в любой момент можете изменить ваш пароль, чтобы обеспечить безопасность вашей учетной записи
+								</div>
+								<div class="form-row">	
+									<div>
+										<div class="form-item">
+											<div class="password toggle-active-self" data-field="#logPass2"></div>
+											<div class="form-label">Пароль</div>
+											<input type="password" class="validate required" data-type="password" data-error="#passwordError2" id="logPass2" placeholder="ваш пароль" name="password">
+											<div class="error" id="passwordError2"></div>
+										</div>
+									</div>
+									<div>
+										<div class="form-item">
+											<div class="password toggle-active-self" data-field="#replogPass"></div>
+											<div class="form-label">Повторите пароль</div>
+											<input type="password" class="validate required" data-type="repeatpassword" data-error="#repeatPasswordError" id="replogPass" placeholder="повторите пароль" name="password">
+											<div class="error" id="repeatPasswordError"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-title top-20">
+									Социальные сети
+								</div>
+								<div class="profile-description bottom-20">	
+									Добавьте аккаунты ваших социальных сетей и используйте их при авторизации
+								</div>
+								<div class="profile-social">
+									<div class="form-row active">
+										<div>
+											<a class="link-icon" href="#"><i class="fa fa-vk"></i></a>
+											<span class="link">	
+												vk.com/<span>dimapoznyak</span>	
+											</span>
+										</div>
+										<div>	
+											<a href="#" class="button button-o">
+												ОТВЯЗАТЬ
+											</a>
+										</div>
+									</div>
+									<div class="form-row">
+										<div>
+											<a class="link-icon" href="#"><i class="fa fa-facebook"></i></a>
+											<span class="link">	
+												Подключите аккаунт к /<span>Facebook</span>	
+											</span>	
+										</div>
+										<div>	
+											<a href="#" class="button button-o">
+												ПРИВЯЗАТЬ
+											</a>
+										</div>
+									</div>
+									<div class="form-row">
+										<div>
+											<a class="link-icon" href="#"><i class="fa fa-twitter	"></i></a>
+											<span class="link">	
+												Подключите аккаунт к /<span>Twitter</span>	
+											</span>		
+										</div>
+										<div>	
+											<a href="#" class="button button-o">
+												ПРИВЯЗАТЬ
+											</a>
+										</div>
+									</div>	
+									<div class="text-center top-20 swich-items-xs">
+										<a href="#" class="reset">Отменить</a>
+										<button type="submit" href="#" class="button violet">СОХРАНИТЬ</button>
+									</div>		
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+
+</body>
+</html>

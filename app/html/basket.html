@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- !!!value in atribute "lang" should change with site lang version http://htmlbook.ru/html/value/lang-->
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<form id="formBasket" class="basket">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="basket-head hidden-xs">
+								<ul class="basket-nav">
+									<li class="open-tab active">
+										<a href="#productContent">Моя корзина</a>
+									</li>
+									<li class="open-tab">
+										<a href="#deliveryContent">
+											<i class="fa fa-angle-right"></i>Доставка
+										</a>
+									</li>
+									<li class="open-tab">
+										<a href="#paymentContent">
+											<i class="fa fa-angle-right"></i>Оплата
+										</a>
+									</li>
+								</ul>
+								<div class="basket-description">
+									Посмотрите на товары в Вашей корзине, и если всё в порядке - переходите к выбору способа доставки товаров, или отредактируйте список, если хотите что-либо изменить
+								</div>
+							</div>
+							<div class="basket-accordion open-tab active visible-xs">
+								<a href="#productContent">Моя корзина</a>
+							</div>
+							<div id="productContent" class="contet-tab-item products-container active">
+								<div class="double-check visible-xs">
+									<div class="basket-row">
+										<div>
+											<div class="title">
+												Товары
+											</div>
+											<div class="descr">
+												выбрано <span>8</span> товаров
+											</div>
+										</div>
+										<div class="price">
+											568.00
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="basket-row product-item-in">
+										<div class="product-info">
+											<div class="product-img">
+												<img src="img/content/basket/item1.png">
+											</div>
+											<div class="product-text basket-column">
+												<div class="top-part">
+													<div class="product-title">	
+														United Color of Benetton
+													</div>
+													<div class="product-detail">Поло</div>
+												</div>
+												<div class="bottom-part product-descr">
+													<span>Размер:</span> 48/50<br>
+													<span>Цвет:</span> Белый
+												</div>
+											</div>
+										</div>
+										<div class="product-links basket-column">
+											<div class="top-part">
+												<span class="product-counter">
+													<a class="minus"></a>
+													<span class="result">2</span>
+													<a class="pluss"></a>
+												</span>
+												<span class="price">
+													<span class="old">30</span> 
+													<span class="actual">16</span><span class="currency">BYN</span>
+												</span>
+											</div>	
+											<div class="bottom-part">
+												<a class="favourite">
+													Убрать из избранного
+												</a>
+												<a class="delete">
+													Удалить
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="basket-row product-item-in">
+										<div class="product-info">
+											<div class="product-img">
+												<img src="img/content/basket/item1.png">
+											</div>
+											<div class="product-text basket-column">
+												<div class="top-part">
+													<div class="product-title">	
+														United Color of Benetton
+													</div>
+													<div class="product-detail">Поло</div>
+												</div>
+												<div class="bottom-part product-descr">
+													<span>Размер:</span> 48/50<br>
+													<span>Цвет:</span> Белый
+												</div>
+											</div>
+										</div>
+										<div class="product-links basket-column">
+											<div class="top-part">
+												<span class="product-counter">
+													<a class="minus"></a>
+													<span class="result">2</span>
+													<a class="pluss"></a>
+												</span>
+												<span class="price">
+													<span class="old">30</span> 
+													<span class="actual">16</span><span class="currency">BYN</span>
+												</span>
+											</div>	
+											<div class="bottom-part">
+												<a class="favourite active">
+													Убрать из избранного
+												</a>
+												<a class="delete">
+													Удалить
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="basket-row product-item-in">
+										<div class="product-info">
+											<div class="product-img">
+												<img src="img/content/basket/item1.png">
+											</div>
+											<div class="product-text basket-column">
+												<div class="top-part">
+													<div class="product-title">	
+														United Color of Benetton
+													</div>
+													<div class="product-detail">Поло</div>
+												</div>
+												<div class="bottom-part product-descr">
+													<span>Размер:</span> 48/50<br>
+													<span>Цвет:</span> Белый
+												</div>
+											</div>
+										</div>
+										<div class="product-links basket-column">
+											<div class="top-part">
+												<span class="product-counter">
+													<a class="minus"></a>
+													<span class="result">2</span>
+													<a class="pluss"></a>
+												</span>
+												<span class="price">
+													<span class="old">30</span> 
+													<span class="actual">16</span><span class="currency">BYN</span>
+												</span>
+											</div>	
+											<div class="bottom-part">
+												<a class="favourite active">
+													Убрать из избранного
+												</a>
+												<a class="delete">
+													Удалить
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket-accordion open-tab visible-xs">
+								<a href="#deliveryContent">
+									Доставка
+								</a>
+							</div>
+							<div id="deliveryContent" class="contet-tab-item">
+								<div class="double-check visible-xs">
+									<div class="basket-row">
+										<div>
+											<div class="title">
+												Доставка
+											</div>
+											<div class="descr" id="doubleDelivery">
+												Пункт самовывоза	
+											</div>
+										</div>
+										<div class="price" id="doublePrice">
+											1.00
+										</div>
+									</div>
+								</div>
+								<div class="basket-part">
+									<div class="basket-title">
+										Контактная информация
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="valid-field">
+												<label for="name">Имя</label>
+												<input type="text" id="name" name="name" placeholder="введите свое имя" required>	
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="valid-field">
+												<label for="lastname">Фамилия</label>
+												<input type="text" id="lastname" name="lastname" placeholder="введите свою фамилию" required>	
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="valid-field">
+												<label for="email">Адрес электронной почты</label>
+												<input type="text" id="email" name="email" placeholder="ваша электронная почта" required>
+											</div>	
+										</div>
+										<div class="col-sm-6">
+											<div class="valid-field">
+												<label for="phone">Телефон</label>
+												<input type="text" id="phone" name="phone" placeholder="номер телефона с кодом" required>	
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-part">
+									<div class="basket-title">
+										Адрес доставки
+									</div>
+									<ul class="radio-group">
+										<input type="hidden" id="delivery" name="delivery" value="Пункт самовывоза">
+										<input type="hidden" name="address" id="address" value="">
+										<li data-value="Экспресс-доставка" data-input="#delivery" data-reset="#address, .onempty" data-text="#paymentInfo, #doubleDelivery">
+											<a class="radio-item" href="#tab1" data-toggle="tab" data-value="5.00" data-input data-text="#paymentInfo, #doublePrice">
+												<div class="radio-value">Экспресс-доставка</div>
+												<div class="radio-description">
+													<p>
+														Возможна примерка. Быстрое оформление и доставка. Только для зарегистрированных клиентов или при сумме заказа более 100BYN
+													</p>
+													<p>
+														Ближайшая дата доставки: <span>7 февраля</span>
+													</p>
+												</div>
+												<div class="radio-price">
+													<span class="price">5.00</span>BYN
+												</div>
+											</a>
+										</li>
+										<li data-value="Обычная доставка" data-input="#delivery" data-reset="#address, .onempty" data-text="#paymentInfo, #doubleDelivery">
+											<a class="radio-item" href="#tab1" data-toggle="tab" data-value="0" data-input data-text="#paymentInfo, #doublePrice">
+												<div class="radio-value">Обычная доставка</div>
+												<div class="radio-description">
+													<p>
+														Бесплатная доставка по всей Беларуси в случае предоплаты или при покупке на сумму более 35 рублей.
+													</p>
+													<p>
+														Ближайшая дата доставки: <span>7 февраля</span>
+													</p>
+												</div>
+												<div class="radio-price">
+													<span class="price">0</span>BYN
+												</div>
+											</a>
+										</li>
+										<li class="active" data-value="Пункт самовывоза" data-input="#delivery" data-reset="#address, .onempty" data-text="#paymentInfo, #doubleDelivery">
+											<a class="radio-item" href="#tab3" data-toggle="tab" data-value="1.00" data-input data-text="#paymentInfo, #doublePrice">
+												<div class="radio-value">Самовывоз</div>
+												<div class="radio-description">
+													Выбирайте удобное время и место в одном из наших фирменных центров. На следующие сутки мы уже соберём Вашу корзину и она будет доступна для примерки
+												</div>
+												<div class="radio-price">
+													<span class="price">1.00</span>BYN
+												</div>
+											</a>
+										</li>	
+									</ul>
+									<div class="result-tab tab-content ">
+										<div class="tab-pane fade" id="tab1">
+											<div class="adress-fields">	
+												<select id="cities" class="onempty" data-concat="#address" data-position="0">		
+													<option value="">
+														Населенный пункт
+													</option>
+													<option value="Минск">
+														Минск
+													</option>		
+													<option value="Речица">
+														Речица
+													</option>		
+													<option value="Могилев">
+														Могилев
+													</option>		
+													<option value="Мозырь">
+														Мозырь
+													</option>		
+													<option value="Гродно">
+														Гродно
+													</option>		
+													<option value="Копыль">
+														Копыль
+													</option>		
+													<option value="Калинковичи">
+														Калинковичи
+													</option>		
+													<option value="Барановичи">
+														Барановичи
+													</option>
+												</select>
+												<div class="fields-inline">
+													<input type="text" class="onempty" data-concat="#address" data-position="1" placeholder="улица, проспект, бульвар">
+													<input type="text" class="onempty" data-concat="#address" data-position="2" placeholder="дом">
+													<input type="text" class="onempty" data-concat="#address" data-position="3" placeholder="квартира">
+													<input type="text" class="onempty" data-concat="#address" data-position="4" placeholder="подъезд">
+													<input type="text" class="onempty" data-concat="#address" data-position="5" placeholder="этаж">
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade in active" id="tab3">
+											<div class="basket-title">
+												Пункты самовывоза
+											</div>
+											<ul class="view-links hidden-xs">
+												<li class="active">
+													<a href="#listView" data-toggle="tab">
+														Списком
+													</a>
+												</li>
+												<li>
+													<a href="#mapView" data-toggle="tab">
+														На карте
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade in active" id="listView">
+													<div class="puncts">
+														<a data-tab=".punct-more" href="#more1" class="punct-item" data-input="#address" data-value="1г. Минск ул. Притыцкого С.О., 77" data-coords="53.8402257,27.65361831" data-text="#paymentAddress">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	1ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<a data-tab=".punct-more" href="#more2" class="punct-item" data-input="#address" data-value="2проспект Дзержинского, ул. 11" data-coords="53.80532257,27.663451831" data-text="#paymentAddress">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	1ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<a data-tab=".punct-more" href="#more3" class="punct-item" data-input="#address" data-value="3г. Минск ул. Притыцкого С.О., 77" data-coords="53.8042257,27.661831" data-text="#paymentAddress">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	3ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+
+														<div id="more1" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	1Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div id="more2" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	2Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div id="more3" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	3Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+
+														<a data-tab=".punct-more" href="#more4" class="punct-item" data-input="#address" data-value="4проспект Дзержинского, ул. 11" data-coords="53.80422257,27.66421831">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	4ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<a data-tab=".punct-more" href="#more5" class="punct-item" data-input="#address" data-value="5г. Минск ул. Притыцкого С.О., 77" data-coords="53.80242257,27.24661831">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	5ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<a data-tab=".punct-more" href="#more6" class="punct-item" data-input="#address" data-value="6проспект Дзержинского, ул. 11" data-coords="53.80223257,27.66183123">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	6ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<div id="more4" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	1Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div id="more5" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	2Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div id="more6" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	3Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+
+														<a data-tab=".punct-more" href="#more7" class="punct-item hidden-punct" data-input="#address" data-value="6проспект Дзержинского, ул. 11" data-coords="53.80286257,27.66134831">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	6ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<a data-tab=".punct-more" href="#more8" class="punct-item hidden-punct" data-input="#address" data-value="6проспект Дзержинского, ул. 11" data-coords="53.85602257,27.66156831">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	6ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<a data-tab=".punct-more" href="#more9" class="punct-item hidden-punct" data-input="#address" data-value="6проспект Дзержинского, ул. 11" data-coords="53.865257,27.61881">
+															<span class="punct-head">
+																<div>
+																	<span>
+																		г. Минск
+																	</span>
+																	6ул. Притыцкого С.О., 77
+																</div>
+															</span>
+														</a>
+														<div id="more7" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	1Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div id="more8" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	2Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div id="more9" class="punct-more">
+															<ul>
+																<div class="punct-title">
+																	3Телефоны: 
+																</div>	
+																<li>8 (017) 188-11-12</li>
+																<li>8 (017) 188-11-12</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	&nbsp;
+																</div>	
+																<li>+375 (33) 653-33-53</li>
+																<li>+375 (39) 372-55-74</li>
+															</ul>
+															<ul>
+																<div class="punct-title">
+																	Часы работы: 
+																</div>	
+																<li>+Ежедневно, круглосуточно</li>
+																<li>00:00-23:59</li>
+															</ul>
+														</div>
+														<div class="results-counter">
+															<div class="counter-container">
+																Вам было показано 6 из 
+																<span id="counterAll">0</span>
+																результатов
+															</div>
+															<a href="#" id="moreResults">
+																Показать еще
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="tab-pane fade" id="mapView">
+													<div class="map" id="map"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket-accordion open-tab visible-xs">
+								<a href="#paymentContent">
+									Оплата
+								</a>
+							</div>
+							<div id="paymentContent" class="contet-tab-item payment">
+								<div class="basket-part">
+									<div class="basket-title top-10">
+										Способ оплаты
+									</div>
+									<div class="basket-row top-10">
+										<div class="basket-description">
+											Оплатите наличными или картой непосредственно курьеру или в пункте примерки. Тогда способ доставки «при получении» больше всего подходит Вам.
+											Если хотите оплатить покупку немедленно и картой - выберите способ оплаты «онлайн»
+										</div>
+										<ul class="payment-method radio-group">
+											<input type="hidden" name="paymentMethod" id="paymentMethod" value="При получении">
+											<li class="active" data-value="При получении" data-input="#paymentMethod">
+												<a class="radio-item" data-toggle="tab">
+													<div class="radio-value">При&nbsp;получении</div>
+												</a>
+											</li>
+											<li data-value="Онлайн" data-input="#paymentMethod">
+												<a class="radio-item" data-toggle="tab">
+													<div class="radio-value">Онлайн</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="basket-part">
+									<div class="basket-title">
+										Товары в корзине
+									</div>
+									<div class="basket-row top-15">
+										<div class="basket-button bottom-10 visible-xs">
+										<span>8 товаров</span>
+											готовы к отправке	
+										</div>
+										<div class="basket-images">
+											<img src="img/content/basket/item1.png">
+											<img src="img/content/basket/item2.png">
+											<img src="img/content/basket/item3.png">
+											<img src="img/content/basket/item4.png">
+											<img src="img/content/basket/item5.png">
+										</div>
+										<div class="basket-button">
+											<div class="bottom-20 hidden-xs">
+												<div class="text-right">
+													<span>8 товаров</span><br>
+													готовы к отправке
+												</div>
+											</div>
+											<div class="top-20 text-center open-tab">
+												<a href="#productContent" class="button button-o">
+													ИЗМЕНИТЬ
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-20 visible-xs"></div>
+								<div class="basket-part">
+									<div class="basket-title top-10">
+										Ваш заказ будет доставлен
+									</div>
+									<div class="basket-row top-15">
+										<div class="delivery-info basket-row">
+											<div class="info-item">
+												<div class="info-img">
+													<img src="img/icons/profile.png">
+												</div>
+												<div>
+													<div class="info-title">
+														Анатолий Ещенко
+													</div>
+													<div class="info-descr">
+														+375 (29) 308-73-42 <br> 
+														podudy@live.ru
+													</div>
+												</div>
+											</div>	
+											<div class="info-item">
+												<div class="info-img">
+													<img src="img/icons/mark-silver.png">
+												</div>
+												<div>
+													<div class="info-title" id="paymentAddress">
+														г. Минск ул. <br> 
+														Притыцкого С.О., 77
+													</div>
+													<div class="info-descr" id="paymentInfo">
+														Пункт самовывоза
+													</div>
+												</div>
+											</div>	
+										</div>
+										<div class="basket-button">
+											<div class="text-center open-tab">
+												<a href="#deliveryContent" class="button button-o">
+													ИЗМЕНИТЬ
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-3 col-md-offset-1">
+							<div class="basket-total-container">
+								<div class="basket-total">
+									<div class="basket-row">
+										<div class="title">ИТОГО</div>
+										<div class="title silver"><span>BYN</span></div>
+									</div>
+									<div class="basket-row top-30">
+										<div>
+											<div class="subtitle">Товары</div>
+											<div class="descr silver">выбрано 8 товаров</div>
+										</div>
+										<div class="title">
+											568.00
+										</div>
+									</div>
+									<div class="basket-row top-20">
+										<div>
+											<div class="subtitle">Доставка</div>
+											<div class="descr silver">обычная доставка</div>
+										</div>
+										<div class="title">
+											5.00
+										</div>
+									</div>
+									<div class="descr silver top-20">
+										Если у Вас есть промокод, Вы можете  получить дополнительную скидку
+									</div>
+									<div class="valid-field">
+										<input type="text" name="promo" id="promo" placeholder="ВВЕДИТЕ ПРОМОКОД ЗДЕСЬ">
+									</div>
+									<div class="basket-row">
+										<div class="semi silver">Скидка <br>по промокоду</div>	
+										<div class="subtitle silver">-18.00</div>
+									</div>
+									<div class="basket-row top-20 bottom-20">
+										<div class="semi silver">Скидка нового <br>покупателя</div>	
+										<div class="subtitle silver">-10.00</div>
+									</div>
+									<div class="white-on-mobile">
+										<div class="basket-row bottom-10">
+											<div class="subtitle">К оплате</div>
+											<div class="title ">510.00</div>	
+										</div>
+										<div class="text-center">
+											<button data-show="#paymentContent" id="sendBasket" class="button violet" type="submit">Оплатить</button>
+											<div data-show="#deliveryContent" class="open-tab">
+												<a href="#paymentContent" class="button violet">
+													Дaлее
+												</a>
+											</div>
+											<div data-show="#productContent" class="open-tab">
+												<a href="#deliveryContent" class="button violet">
+													Дaлее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPJmpekEazyMzVB1DtFMT1xQdH-GL_ewU&callback=initMap"></script>
+
+</body>
+</html>

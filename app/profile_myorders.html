@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="top-nav-container">
+                <div class="container">
+                    <div class="top-nav">
+                        <ul>
+                            <li><a href="main.html">Женщинам</a></li>
+                            <li><a href="2">Мужчинам</a></li>
+                            <li><a href="3">Детям</a></li>
+                            <li class="active"><a href="4">Распродажа</a>
+                                <div class="popup-nav lists-container">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <ul class="lists-item">
+                                                <li><a href="">Новинки: oдежда</a></li>
+                                                <li><a href="">Новинки: обувь и аксессуары</a></li>
+                                                <li><a href="">Cпортивная одежда</a></li>
+                                                <li><a href="">Аксессуары</a></li>
+                                                <li><a href="">Брюки и леггинсы</a></li>
+                                                <li><a href="">Джемперы и кардиганы</a></li>
+                                                <li><a href="">Джинсы</a></li>
+                                                <li><a href="">Комбинезоны</a></li>
+                                                <li><a href="">Купальники</a></li>
+                                                <li><a href="">Куртки и пальто</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <ul class="lists-item">
+                                                <li><a href="">Носки, чулки и колготки</a></li>
+                                                <li><a href="">Обувь</a></li>
+                                                <li><a href="">Платья</a></li>
+                                                <li><a href="">Подарки</a></li>
+                                                <li class="active"><a href="">Солнцезащитные очки</a></li>
+                                                <li><a href="">Сумки и кошельки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-5 hidden-xs">
+                                            <div class="brands">
+                                                <span>
+										<img alt="brand" src="img/brands/zara.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/zara.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/mango.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/mango.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/handm.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/handm.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/loewe.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/loewe.png">
+									</span>
+                                                <span>
+										<img alt="brand" src="img/brands/kime.png">
+									</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="lang">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+						Русский <img alt="ru" src="img/lang/ru.png">
+					</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Беларуская <img alt="blr" src="img/lang/blr.png"></a></li>
+                                    <li><a href="#">English <img alt="eng" src="img/lang/eng.png"></a></li>
+                                    <li><a href="#">Español <img alt="sp" src="img/lang/sp.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="global-nav-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <a class="logo" href="/">
+					<img src="img/icons/logo.png" alt="logo">
+				</a>
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <div class="search-container">
+                                <div class="search-field">
+                                    <input id="searchField" type="text" name="search" placeholder="поиск" autocomplete="off">
+                                </div>
+                                <div id="searchBody" class="search-body lists-container">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <ul id="similarRequests" class="lists-item">
+                                                <div class="item-title">Похожие совпадения</div>
+                                                <li><a href="">рубашка белая</a></li>
+                                                <li><a href="">женская блузка с рукавом </a></li>
+                                                <li><a href="">майка с принтом рубай</a></li>
+                                                <li><a href="">рубашка Mexx</a></li>
+                                                <li><a href="">рубашка Chill</a></li>
+                                                <li><a href="">рубашка красная</a></li>
+                                            </ul>
+                                            <ul id="recentRequests" class="lists-item">
+                                                <div class="item-title">Недавние запросы</div>
+                                                <li><a href="">рубашка белая</a></li>
+                                                <li><a href="">женская блузка</a></li>
+                                                <li><a href="">красная блузка</a></li>
+                                                <li><a href="">secondary джинсы</a></li>
+                                                <li><a href="">кепка</a></li>
+                                                <li><a href="">очки пластик</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-7 hidden-xs">
+                                            <ul class="lists-item">
+                                                <div class="item-title">Быть может вы ищете</div>
+                                                <li><a href="">Акции</a></li>
+                                                <li><a href="">Детские подгузники Huggies</a></li>
+                                                <li class="active"><a href="">Джинсы выбеленные с принтом</a></li>
+                                                <li><a href="">Мужские костюмы</a></li>
+                                                <li><a href="">Нижнее белье Montblanc</a></li>
+                                                <li><a href="">Портмоне</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mobileMenu" class="mobile-nav visible-xs"></div>
+                                <ul class="second-list visible-xs">
+                                    <li><a href="#">Возврат</a></li>
+                                    <li class="strong"><a href="#">Оферта</a></li>
+                                    <li><a href="#">Правила продажи товаров</a></li>
+                                    <li><a href="#">Программа лояльности</a></li>
+                                    <li><a href="#">Товары партнёров</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="icons-nav">
+                                <a href="#" id="search-button" class="hidden-xs">
+						<i class="glyphicon glyphicon-search"></i>
+					</a>
+                                <a href="#">
+						<i class="glyphicon glyphicon-user"></i>
+					</a>
+                                <a href="#">
+						<i class="glyphicon glyphicon-heart"></i>
+					</a>
+                                <a class="basket" href="#">
+						<img src="img/icons/basket.png" alt="basket">
+						<span>5</span>
+					</a>
+                                <a class="menu-toggler">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secondary-nav-container hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <ul class="secondary-nav">
+                                <li><a href="#">Одежда</a></li>
+                                <li><a href="#">Обувь</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li class="active"><a href="#">Cпортивная одежда</a></li>
+                                <li><a href="#">Лицо и Tело</a></li>
+                                <li><a href="#">Подарки</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="social-links">
+                                Мы в социальных сетях:
+                                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 hidden-xs">
+                        <div class="profile-sidebar">
+                            <div class="profile-title">
+                                Анатолий Прокуративный
+                            </div>
+                            <div class="status">
+                                Добрый вечер!
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="" class="active icon-left user-icon">
+				Мои заказы
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left mark-icon">
+				Адресная книга
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left heart-icon">
+				Избранное
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left time-icon">
+				Лист ожидания
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left notific-icon">
+				Подписки
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left comment-icon">
+				Отзывы и вопросы
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left loyal-icon">
+				Программа лояльности
+			</a>
+                                </li>
+                                <li>
+                                    <a href="" class="icon-left exit-icon">
+				Выйти
+			</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-8 col-sm-12">
+                        <div class="profile-content">
+                            <div class="profile-title">
+                                Мои заказы
+                            </div>
+                            <div class="profile-description">
+                                Здесь Вы можете посмотреть все текущие заказы, которые были оформлены на данный момент, и все совершенные заказы вообще
+                            </div>
+                            <div class="profile-orders">
+                                <ul class="profile-tab-nav">
+                                    <li class="active">
+                                        <a href="#nowOrders" data-toggle="tab">
+											Текущие покупки <span class="silver">(5)</span>
+										</a>
+                                    </li>
+                                    <li>
+                                        <a href="#allOrders" data-toggle="tab">
+											Все заказы <span class="silver">(22)</span>
+										</a>
+                                    </li>
+                                </ul>
+                                <div class="filters text-right profile-filters">
+                                    <div class="dropdown dropdown-filters">
+                                        <span class="dropdown-text"> 
+											Сортировать:
+										</span>
+                                        <a class="dropdown-toggle" data-toggle="dropdown">
+											по цене<img alt="eng" src="img/icons/arrow-down.png">
+										</a>
+                                        <ul class="dropdown-menu">
+                                            <li data-value='по цене<img alt="eng" src="img/icons/arrow-up.png">'>
+                                                <a>Цена (по возрастанию)</a>
+                                            </li>
+                                            <li data-value='по цене<img alt="eng" src="img/icons/arrow-down.png">'>
+                                                <a>Цена (по убыванию)</a>
+                                            </li>
+                                            <li data-value='Есть в наличии'><a href="#">Есть в наличии</a></li>
+                                            <li data-value="Недавно добавлены"><a href="#">Недавно добавленные</a></li>
+                                            <li data-value="Давно добавлены"><a href="#">Давно добавленные</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="nowOrders" class="tab-pane fade in active">
+                                        <div>
+                                            <div class="order-item">
+                                                <div class="order-text">
+                                                    <div class="order-info">
+                                                        <span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>
+                                                        </span>
+                                                        <span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+                                                        </span>
+                                                        <span class="order-status">
+															В пути
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-row">
+                                                    <div class="order-images">
+                                                        <img src="img/content/basket/item1.png">
+                                                        <img src="img/content/basket/item2.png">
+                                                        <img src="img/content/basket/item3.png">
+                                                        <img src="img/content/basket/item4.png">
+                                                        <img src="img/content/basket/item5.png">
+                                                    </div>
+                                                    <div class="order-button">
+                                                        <div class="price">
+                                                            <span class="bold">12</span>BYN
+                                                        </div>
+                                                        <div>
+                                                            <a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="order-text">
+                                                    <div class="order-info">
+                                                        <span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>
+                                                        </span>
+                                                        <span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+                                                        </span>
+                                                        <span class="order-status">
+															В пути
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-row">
+                                                    <div class="order-images">
+                                                        <img src="img/content/basket/item1.png">
+                                                        <img src="img/content/basket/item2.png">
+                                                        <img src="img/content/basket/item3.png">
+                                                        <img src="img/content/basket/item4.png">
+                                                        <img src="img/content/basket/item5.png">
+                                                    </div>
+                                                    <div class="order-button">
+                                                        <div class="price">
+                                                            <span class="bold">12</span>BYN
+                                                        </div>
+                                                        <div>
+                                                            <a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="order-text">
+                                                    <div class="order-info">
+                                                        <span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>
+                                                        </span>
+                                                        <span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+                                                        </span>
+                                                        <span class="order-status">
+															В пути
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-row">
+                                                    <div class="order-images">
+                                                        <img src="img/content/basket/item1.png">
+                                                        <img src="img/content/basket/item2.png">
+                                                        <img src="img/content/basket/item3.png">
+                                                        <img src="img/content/basket/item4.png">
+                                                        <img src="img/content/basket/item5.png">
+                                                    </div>
+                                                    <div class="order-button">
+                                                        <div class="price">
+                                                            <span class="bold">12</span>BYN
+                                                        </div>
+                                                        <div>
+                                                            <a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="order-text">
+                                                    <div class="order-info">
+                                                        <span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>
+                                                        </span>
+                                                        <span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+                                                        </span>
+                                                        <span class="order-status">
+															В пути
+														</span>
+                                                    </div>
+                                                </div>
+                                                <div class="order-row">
+                                                    <div class="order-images">
+                                                        <img src="img/content/basket/item1.png">
+                                                        <img src="img/content/basket/item2.png">
+                                                        <img src="img/content/basket/item3.png">
+                                                        <img src="img/content/basket/item4.png">
+                                                        <img src="img/content/basket/item5.png">
+                                                    </div>
+                                                    <div class="order-button">
+                                                        <div class="price">
+                                                            <span class="bold">12</span>BYN
+                                                        </div>
+                                                        <div>
+                                                            <a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="results-counter bottom-20">
+                                            <div class="counter-container">
+                                                Вам было показано 6 из
+                                                <span>92</span> результатов
+                                            </div>
+                                            <a href="#" id="moreResults">
+												Показать еще
+											</a>
+                                        </div>
+                                    </div>
+                                    <div id="allOrders" class="tab-pane fade">
+                                        <div class="order-item">
+                                            <div class="order-text">
+                                                <div class="order-info">
+                                                    <span class="order-number">
+														Номер заказа: <span class="bold">171104-391816</span>
+                                                    </span>
+                                                    <span class="order-date">
+														Дата и время: <span class="bold">07.01.2018 21:07</span>
+                                                    </span>
+                                                    <span class="order-status">
+														В пути
+													</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-row">
+                                                <div class="order-images">
+                                                    <img src="img/content/basket/item1.png">
+                                                    <img src="img/content/basket/item2.png">
+                                                    <img src="img/content/basket/item3.png">
+                                                    <img src="img/content/basket/item4.png">
+                                                    <img src="img/content/basket/item5.png">
+                                                </div>
+                                                <div class="order-button">
+                                                    <div class="price">
+                                                        <span class="bold">12</span>BYN
+                                                    </div>
+                                                    <div>
+                                                        <a class="button-sm button-o">
+															ПОДРОБНО
+														</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-text">
+                                                <div class="order-info">
+                                                    <span class="order-number">
+														Номер заказа: <span class="bold">171104-391816</span>
+                                                    </span>
+                                                    <span class="order-date">
+														Дата и время: <span class="bold">07.01.2018 21:07</span>
+                                                    </span>
+                                                    <span class="order-status">
+														В пути
+													</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-row">
+                                                <div class="order-images">
+                                                    <img src="img/content/basket/item1.png">
+                                                    <img src="img/content/basket/item2.png">
+                                                    <img src="img/content/basket/item3.png">
+                                                    <img src="img/content/basket/item4.png">
+                                                    <img src="img/content/basket/item5.png">
+                                                </div>
+                                                <div class="order-button">
+                                                    <div class="price">
+                                                        <span class="bold">12</span>BYN
+                                                    </div>
+                                                    <div>
+                                                        <a class="button-sm button-o">
+															ПОДРОБНО
+														</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container top-10">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 hidden-xs hidden-sm">
+                        <ul class="footer-list">
+                            <div class="title">
+                                Помощь и информация
+                            </div>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Статус заказа по номеру</a></li>
+                            <li><a href="#">Центр поддержки Lamoda</a></li>
+                            <li><a href="#">Как оформить заказ</a></li>
+                            <li><a href="#">Как выбрать размер</a></li>
+                            <li><a href="#">Условия доставки</a></li>
+                            <li><a href="#">Мои заказы</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 hidden-xs">
+                        <ul class="footer-list">
+                            <div class="title">
+                                &nbsp;
+                            </div>
+                            <li><a href="#">Возврат</a></li>
+                            <li class="strong"><a href="#">Оферта</a></li>
+                            <li><a href="#">Правила продажи товаров</a></li>
+                            <li><a href="#">Программа лояльности</a></li>
+                            <li><a href="#">Товары партнёров</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-8 swich-items-xs">
+                        <div class="col-sm-6">
+                            <ul class="footer-list">
+                                <div class="title bottom-20">
+                                    Способы оплаты
+                                </div>
+                                <a class="" href="#">
+							<img src="img/icons/belcart.png">
+						</a>
+                                <a class="" href="#">
+							<img src="img/icons/mastercard.png">
+						</a>
+                                <a class="" href="#">
+							<img src="img/icons/visa.png">
+						</a>
+                                <a class="" href="#">
+							<img src="img/icons/erip.png">
+						</a>
+                                <a class="" href="#">
+							<img src="img/icons/webpay.png">
+						</a>
+                            </ul>
+                            <ul class="social-links top-30">
+                                <div class="title">
+                                    Мы в соцсетях
+                                </div>
+                                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="text-list">
+                                <li class="bottom-20">
+                                    2012-2018 © "timodi" модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены.
+                                </li>
+                                <li class="bottom-20">
+                                    Доставка по всей Беларуси!
+                                </li>
+                                <li class="bottom-20">
+                                    Телефон: 80173886000 (круглосуточно). Общество с ограниченной ответственностью «timodi». Государственная регистрация от 20.04.2012 Администрацией Ленинского района г. Могилева.
+                                </li>
+                                <li class="bottom-20">
+                                    Дата регистрации в торговом реестре: 25.07.2012 Исполнительным комитетом г. Могилева.
+                                </li>
+                                <li>
+                                    Юр. адрес: 220073, Республика Беларусь, г. Минск, ул. Скрыганова, д. 6А, пом. 14, комн. 37.<br> Время работы: 9:00—17:30 пн—пт.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-container">
+                    <div class="logo-footer">
+                        <img class="hidden-xs black-logo" src="img/icons/logo-black.png">
+                        <img class="visible-xs" src="img/icons/logo-white.png">
+                    </div>
+                    <div class="copy">
+                        © 20017–2018 ООО «Timodi Парцифик» <br>
+                        <span>design by</span> dimapoznyak
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="back-to-top"></a>
+
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

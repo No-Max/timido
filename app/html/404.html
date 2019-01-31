@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="error-404">
+					<img src="img/content/404.png">
+
+					<div class="buttons">
+						<a onclick="javascript:history.back(-1); return false;" class="button button-o violet">
+							НАЗАД
+						</a>
+						<a href="" class="button violet">
+							НА ГЛАВНУЮ
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+
+</body>
+</html>

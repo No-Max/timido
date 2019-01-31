@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	
+	@@include('html/modules/head.html')
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			@@include('html/modules/top_nav.html')
+			@@include('html/modules/global_nav.html')
+			@@include('html/modules/secondary_nav.html')
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 hidden-xs">
+						@@include('html/modules/profile_sidebar.html')	
+					</div>
+					<div class="col-md-offset-1 col-md-8 col-sm-12">
+						<div class="profile-content">	
+							<div class="profile-title">	
+								Мои заказы	
+							</div>
+							<div class="profile-description">	
+								Здесь Вы можете посмотреть все текущие заказы, которые были оформлены на данный момент, и все совершенные заказы вообще
+							</div>
+							<div class="profile-orders">	
+								<ul class="profile-tab-nav">	
+									<li class="active">
+										<a href="#nowOrders" data-toggle="tab">
+											Текущие покупки <span class="silver">(5)</span>
+										</a>
+									</li>
+									<li>
+										<a href="#allOrders" data-toggle="tab">
+											Все заказы <span class="silver">(22)</span>
+										</a>
+									</li>
+								</ul>
+								<div class="filters text-right profile-filters">
+									<div class="dropdown dropdown-filters">
+										<span class="dropdown-text"> 
+											Сортировать:
+										</span>
+										<a class="dropdown-toggle" data-toggle="dropdown">
+											по цене<img alt="eng" src="img/icons/arrow-down.png">
+										</a>
+										<ul class="dropdown-menu">
+											<li data-value='по цене<img alt="eng" src="img/icons/arrow-up.png">'>
+												<a>Цена (по возрастанию)</a>
+											</li>
+											<li data-value='по цене<img alt="eng" src="img/icons/arrow-down.png">'>
+												<a>Цена (по убыванию)</a>
+											</li>
+											<li data-value='Есть в наличии'><a href="#">Есть в наличии</a></li>
+											<li data-value="Недавно добавлены"><a href="#">Недавно добавленные</a></li>
+											<li data-value="Давно добавлены"><a href="#">Давно добавленные</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="tab-content">	
+									<div id="nowOrders" class="tab-pane fade in active">
+										<div>	
+											<div class="order-item">
+												<div class="order-text">
+													<div class="order-info">
+														<span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>		
+														</span>
+														<span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+														</span>
+														<span class="order-status">
+															В пути
+														</span>
+													</div>
+												</div>
+												<div class="order-row">
+													<div class="order-images">
+														<img src="img/content/basket/item1.png">
+														<img src="img/content/basket/item2.png">
+														<img src="img/content/basket/item3.png">
+														<img src="img/content/basket/item4.png">
+														<img src="img/content/basket/item5.png">
+													</div>
+													<div class="order-button">
+														<div class="price">
+															<span class="bold">12</span>BYN	
+														</div>
+														<div>
+															<a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="order-item">
+												<div class="order-text">
+													<div class="order-info">
+														<span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>		
+														</span>
+														<span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+														</span>
+														<span class="order-status">
+															В пути
+														</span>
+													</div>
+												</div>
+												<div class="order-row">
+													<div class="order-images">
+														<img src="img/content/basket/item1.png">
+														<img src="img/content/basket/item2.png">
+														<img src="img/content/basket/item3.png">
+														<img src="img/content/basket/item4.png">
+														<img src="img/content/basket/item5.png">
+													</div>
+													<div class="order-button">
+														<div class="price">
+															<span class="bold">12</span>BYN	
+														</div>
+														<div>
+															<a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="order-item">
+												<div class="order-text">
+													<div class="order-info">
+														<span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>		
+														</span>
+														<span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+														</span>
+														<span class="order-status">
+															В пути
+														</span>
+													</div>
+												</div>
+												<div class="order-row">
+													<div class="order-images">
+														<img src="img/content/basket/item1.png">
+														<img src="img/content/basket/item2.png">
+														<img src="img/content/basket/item3.png">
+														<img src="img/content/basket/item4.png">
+														<img src="img/content/basket/item5.png">
+													</div>
+													<div class="order-button">
+														<div class="price">
+															<span class="bold">12</span>BYN	
+														</div>
+														<div>
+															<a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="order-item">
+												<div class="order-text">
+													<div class="order-info">
+														<span class="order-number">
+															Номер заказа: <span class="bold">171104-391816</span>		
+														</span>
+														<span class="order-date">
+															Дата и время: <span class="bold">07.01.2018 21:07</span>
+														</span>
+														<span class="order-status">
+															В пути
+														</span>
+													</div>
+												</div>
+												<div class="order-row">
+													<div class="order-images">
+														<img src="img/content/basket/item1.png">
+														<img src="img/content/basket/item2.png">
+														<img src="img/content/basket/item3.png">
+														<img src="img/content/basket/item4.png">
+														<img src="img/content/basket/item5.png">
+													</div>
+													<div class="order-button">
+														<div class="price">
+															<span class="bold">12</span>BYN	
+														</div>
+														<div>
+															<a class="button-sm button-o">
+																ПОДРОБНО
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="results-counter bottom-20">
+											<div class="counter-container">
+												Вам было показано 6 из 
+												<span>92</span>
+												результатов
+											</div>
+											<a href="#" id="moreResults">
+												Показать еще
+											</a>
+										</div>
+									</div>
+									<div id="allOrders" class="tab-pane fade">
+										<div class="order-item">
+											<div class="order-text">
+												<div class="order-info">
+													<span class="order-number">
+														Номер заказа: <span class="bold">171104-391816</span>		
+													</span>
+													<span class="order-date">
+														Дата и время: <span class="bold">07.01.2018 21:07</span>
+													</span>
+													<span class="order-status">
+														В пути
+													</span>
+												</div>
+											</div>
+											<div class="order-row">
+												<div class="order-images">
+													<img src="img/content/basket/item1.png">
+													<img src="img/content/basket/item2.png">
+													<img src="img/content/basket/item3.png">
+													<img src="img/content/basket/item4.png">
+													<img src="img/content/basket/item5.png">
+												</div>
+												<div class="order-button">
+													<div class="price">
+														<span class="bold">12</span>BYN	
+													</div>
+													<div>
+														<a class="button-sm button-o">
+															ПОДРОБНО
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-item">
+											<div class="order-text">
+												<div class="order-info">
+													<span class="order-number">
+														Номер заказа: <span class="bold">171104-391816</span>		
+													</span>
+													<span class="order-date">
+														Дата и время: <span class="bold">07.01.2018 21:07</span>
+													</span>
+													<span class="order-status">
+														В пути
+													</span>
+												</div>
+											</div>
+											<div class="order-row">
+												<div class="order-images">
+													<img src="img/content/basket/item1.png">
+													<img src="img/content/basket/item2.png">
+													<img src="img/content/basket/item3.png">
+													<img src="img/content/basket/item4.png">
+													<img src="img/content/basket/item5.png">
+												</div>
+												<div class="order-button">
+													<div class="price">
+														<span class="bold">12</span>BYN	
+													</div>
+													<div>
+														<a class="button-sm button-o">
+															ПОДРОБНО
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		@@include('html/modules/footer.html')
+
+	</div>
+	@@include('html/modules/scripts_connecting.html')
+
+</body>
+</html>
